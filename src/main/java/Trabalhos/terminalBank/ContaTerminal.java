@@ -1,4 +1,4 @@
-package job.napoli.terminalBank;
+package Trabalhos.terminalBank;
 
 import java.util.Locale;
 import java.util.Scanner;
