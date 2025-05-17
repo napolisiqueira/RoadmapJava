@@ -3,28 +3,37 @@ package Trabalhos.Contador;
 import java.util.Scanner;
 
 public class Contador {
-    public static void main(String[] args) {
-        Scanner leitura = new Scanner(System.in);
-        System.out.println("Digite o primeiro numero: ");
-        int numberOne = leitura.nextInt();
-        System.out.println("Digite o segundo numero: ");
-        int numberTwo = leitura.nextInt();
-
-
-        try {
-            contar(number1);
-        } catch (ParametrosInvalidosException e) {
-            System.out.println(e);
+    public static class ParametrosInvalidosException extends Exception {
+        public ParametrosInvalidosException(String mensagem) {
+            super(mensagem);
         }
     }
 
-    static void contar(int numero1, int numero2) throws ParametrosInvalidosException {
-        if (numero1 > numero2) {
-            throw new ParametrosInvalidosException("Numeros invalidos. Numero 1 deve ser menor que Numero 2.");
+
+    public static void main(String[] args) {
+        Scanner terminal = new Scanner(System.in);
+        System.out.println("Digite o primeiro parâmetro");
+        int parametroUm = terminal.nextInt();
+        System.out.println("Digite o segundo parâmetro");
+        int parametroDois = terminal.nextInt();
+
+        try {
+            contar(parametroUm, parametroDois);
+
+        }catch (ParametrosInvalidosException exception) {
+            System.out.printf("O segundo parâmetro deve ser maior que o primeiro");
+        }
+    }
+
+    static void contar(int parametroUm, int parametroDois ) throws ParametrosInvalidosException {
+        if (parametroUm > parametroDois) {
+            throw new ParametrosInvalidosException("Parametro um maior que o segundo.");
         } else {
-            for (i = 0; i < (numero2 - numero1); i++) {
-                System.out.printf("Imprimindo numero %d", i + 1);
+            int contagem = parametroDois - parametroUm;
+            for (int i = 0; i < contagem; i++) {
+                System.out.println(i+1);
             }
         }
     }
 }
+
