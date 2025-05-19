@@ -1,6 +1,6 @@
 package com.poo.Escola;
 
-import java.util.jar.Attributes.Name;
+
 
 public class Aluno {
     private String Name;
