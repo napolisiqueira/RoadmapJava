@@ -12,6 +12,7 @@ public class MjoInir {
             nome = leitor.next();
             if (nome.equals("Thor")) System.out.println("Y");
             else System.out.println("N");
+            leitor.close();
         }
     }
 }

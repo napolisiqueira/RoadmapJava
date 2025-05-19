@@ -31,7 +31,9 @@ public class PedraPapelAtaqueAereo {
             } while (!validation(player1, player2));
 
             Result(player1, player2);
+            read.close();
         }
+
     }
 
 

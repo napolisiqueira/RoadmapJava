@@ -20,6 +20,6 @@ public class ScannerTraine {
         double altura = scanner.nextDouble();
 
         System.out.printf("Seu nome é %s %s, tem %d anos e %f de altura", nome, sobrenome, idade, altura);
-
+        scanner.close();
     }
 }

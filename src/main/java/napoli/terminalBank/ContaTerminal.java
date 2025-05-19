@@ -1,4 +1,4 @@
-package Trabalhos.terminalBank;
+package napoli.terminalBank;
 
 import java.util.Locale;
 import java.util.Scanner;
@@ -23,7 +23,7 @@ public class ContaTerminal {
         System.out.printf("Ola %s, obrigado por criar uma conta no banco %s. Sua agencia é %d, e seu saldo no valor" +
                 " de R$%f já está disponivel para cheque", nome, banco, agencia, saldo);
 
-
+        scanner.close();
     }
 }
 

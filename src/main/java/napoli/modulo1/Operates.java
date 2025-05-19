@@ -49,6 +49,7 @@ public  class Operates {
         b = 6;
 
         String resultado = a==b ? "verdadeiro" : "falso";
+        System.out.println(resultado);
 
 
          //Isso é uma expressão booleana, sempre retornando verdadeiro ou falso.

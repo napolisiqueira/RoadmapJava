@@ -1,4 +1,4 @@
-package Trabalhos.Contador;
+package napoli.Contador;
 
 import java.util.Scanner;
 
@@ -23,6 +23,7 @@ public class Contador {
         }catch (ParametrosInvalidosException exception) {
             System.out.printf("O segundo parâmetro deve ser maior que o primeiro");
         }
+        terminal.close();
     }
 
     static void contar(int parametroUm, int parametroDois ) throws ParametrosInvalidosException {
@@ -35,5 +36,6 @@ public class Contador {
             }
         }
     }
+    
 }
 

@@ -14,5 +14,6 @@ public class ListaNomes {
         System.out.println(nomes[2]);
         System.out.println(nomes[6]);
         System.out.println(nomes[8]);
+        sc.close();
     }
 }

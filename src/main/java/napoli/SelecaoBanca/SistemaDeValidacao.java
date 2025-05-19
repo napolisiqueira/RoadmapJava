@@ -1,4 +1,4 @@
-package Trabalhos.SelecaoDeBanca;
+package napoli.SelecaoBanca;
 
 import java.util.ArrayList;
 import java.util.concurrent.ThreadLocalRandom;
