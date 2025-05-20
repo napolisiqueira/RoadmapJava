@@ -1,4 +1,4 @@
-package napoli.Contador;
+package napoli.Trabalhos.Contador;
 
 import java.util.Scanner;
 
