@@ -1,7 +1,7 @@
 package napoli.Trabalhos.Iphone;
 
 public interface Telefone  {
-    static void ligar(String numero) {}
-    static void atender() {}
-    static void inciarCorreioVoz() {}
+    void ligar(String numero);
+    void atender();
+    void inciarCorreioVoz();
 }
